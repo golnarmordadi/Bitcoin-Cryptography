@@ -44,4 +44,7 @@ Base58 is a group of encoding/decoding schemes used to switch data between binar
 ### network
 Bitcoin library separate tokens using their network parameters. Every parameter should find from the source code OR for wellknown blockchains that can be find from the Bitcoin documnts. When network parameters completely be ready, it should add to the Bitcoin Library networks with coding.
 
+### ECPair
+A library for managing SECP256k1 keypairs
+
 
