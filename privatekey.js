@@ -1,8 +1,6 @@
-const bitcore = require("bitcore-lib");
 import * as bip32 from 'bip32';
 import * as bip39 from 'bip39';
 const HDKey = require("hdkey");
-var mnemonic = require('bitcore-mnemonic');
 
 const mnemonic = 'arrive mixture refuse loud people robot dolphin scissors lift curve better demand';
 
@@ -24,8 +22,6 @@ const versions = {
     private: 112,
     public: 38,
 }
-
-bitcore.Networks.add(network);
 
 const phrase = mnemonic ? mnemonic : bip39.generateMnemonic();
 const seed = bip39.mnemonicToSeedSync(phrase);
